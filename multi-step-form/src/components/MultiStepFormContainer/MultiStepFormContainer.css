@@ -1,0 +1,9 @@
+.container-wrapper{
+    max-width: 850px;
+    background-color: var(--alabaster);
+    display: flex;
+    column-gap: 90px;
+    margin: 5% auto;
+    padding: 14px;
+    border-radius: 6px;
+}
