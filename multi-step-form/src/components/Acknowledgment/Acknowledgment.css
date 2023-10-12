@@ -1,0 +1,27 @@
+.container-form{
+    padding-top: 120px;
+}
+
+.container-acknowledgment{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.container-acknowledgment__image{
+    width: 80px;
+    height: 80px;
+}
+
+.container-acknowledgment__title{
+    color: var(--marine-blue);
+}
+
+.container-acknowledgment__description{
+    font-size: 14.9px;
+    text-align: center;
+    color: var(--cool-gray);
+}

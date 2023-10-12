@@ -1,0 +1,16 @@
+.form__text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.form__text-title{
+    font-size: 26px;
+    color: var(--marine-blue);
+}
+
+.form__text-subtitle{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cool-gray);
+} 

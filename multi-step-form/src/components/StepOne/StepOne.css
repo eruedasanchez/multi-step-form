@@ -1,0 +1,48 @@
+.form__fields{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 42px;
+    margin-bottom: 100px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.field__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.field__title{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--marine-blue);
+}
+
+.field__empty{
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--strawberry-red);
+}
+
+.field__empty.active{
+    display: block;
+}
+
+.field__input{
+    border: 1px solid var(--cool-gray);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.field__input.empty{
+    border: 1px solid var(--strawberry-red);
+} 
