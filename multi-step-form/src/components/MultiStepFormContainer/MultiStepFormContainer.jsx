@@ -1,8 +1,8 @@
-import Sidebar from '../Sidebar/Sidebar';
-// import Acknowledgment from '../Acknowledgment/Acknowledgment';
 import './MultiStepFormContainer.css';
-import FormContainer from '../FormContainer/FormContainer';
 import { useParams } from 'react-router-dom';
+import Sidebar from '../Sidebar/Sidebar';
+import FormContainer from '../FormContainer/FormContainer';
+
 
 const MultiStepFormContainer = () => {
     const {step} = useParams();
@@ -10,7 +10,7 @@ const MultiStepFormContainer = () => {
     return (
         <div className="container-wrapper">
             <Sidebar step={step}/>
-            <FormContainer/>
+            <FormContainer step={step}/>
         </div>
     )
 }

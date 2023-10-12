@@ -1,10 +1,10 @@
 import StepContainer from '../StepContainer/StepContainer';
 import './FormContainer.css';
 
-const FormContainer = () => {
+const FormContainer = ({step}) => {
     return (
         <div className="container-form">
-            <StepContainer/>
+            <StepContainer step={step}/>
         </div>
     )
 }
