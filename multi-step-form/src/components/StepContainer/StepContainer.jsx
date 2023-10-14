@@ -1,4 +1,5 @@
 import './StepContainer.css';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { stepHeaders, number } from '../../resources/resources.js';
 import StepHeader from '../StepHeader/StepHeader';
@@ -6,8 +7,6 @@ import StepOne from '../StepOne/StepOne';
 import StepTwo from '../StepTwo/StepTwo';
 import StepThree from '../StepThree/StepThree';
 import StepFour from '../StepFour/StepFour';
-import { useEffect, useState } from 'react';
-
 
 const StepContainer = ({step}) => {
 
@@ -50,13 +49,13 @@ const StepContainer = ({step}) => {
                     </Link>
                 }
                 {
-                    (fieldsStatus.emptyName === false && fieldsStatus.emptyEmail === false && fieldsStatus.emptyPhone === false) ?
-                    <Link to={`/multi-step-form/${parseInt(step) + 1}`}>
+                    (fieldsStatus.emptyName || fieldsStatus.emptyEmail || fieldsStatus.emptyPhone) ?
+                    <Link to={`/multi-step-form/${parseInt(step)}`}>
                         {
                             parseInt(step) === number.four ? <button className="btn confirm" onClick={allowNextStep}>Confirm</button> : <button className="btn next" onClick={allowNextStep}>Next Step</button>
                         }
                     </Link> :
-                    <Link to={`/multi-step-form/${parseInt(step)}`}>
+                    <Link to={`/multi-step-form/${parseInt(step) + 1}`}>
                         {
                             parseInt(step) === number.four ? <button className="btn confirm" onClick={allowNextStep}>Confirm</button> : <button className="btn next" onClick={allowNextStep}>Next Step</button>
                         }
