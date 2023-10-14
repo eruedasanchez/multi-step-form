@@ -24,14 +24,9 @@
 }
 
 .field__empty{
-    display: none;
     font-size: 12px;
     font-weight: 500;
     color: var(--strawberry-red);
-}
-
-.field__empty.active{
-    display: block;
 }
 
 .field__input{
