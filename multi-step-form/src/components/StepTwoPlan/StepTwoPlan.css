@@ -1,0 +1,51 @@
+.btn-plan{
+    background-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    border: 1px solid var(--cool-gray);
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-plan:is(:hover, :focus){
+    cursor: pointer;
+}
+
+.btn-plan.selected{
+    background-color: var(--magnolia);
+    border: 1px solid var(--purplish-blue);
+}
+
+.plan{
+    width: 136px;
+    height: 165px;
+    padding: 14px;
+}
+
+.plan__image{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.plan__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 6px;
+}
+
+.plan__info-name{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--marine-blue);
+}
+
+.plan__info-price{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--cool-gray);
+} 
+
+.plan__info-free{
+    color: var(--marine-blue);
+}

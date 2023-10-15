@@ -18,3 +18,5 @@ export const stepHeaders = [
 ]
 
 export const number = { one: 1, two: 2, three: 3, four: 4, five: 5};
+
+export const plan = { arcade: "Arcade", advanced: "Advanced", pro: "Pro"};
