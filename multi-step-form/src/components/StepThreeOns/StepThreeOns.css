@@ -1,0 +1,74 @@
+.btn-ons{
+    background-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    border: 1px solid var(--cool-gray);
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-ons:is(:hover, :focus){
+    cursor: pointer;
+}
+
+.btn-ons.selected{
+    background-color: var(--magnolia);
+    border: 1px solid var(--purplish-blue);
+}
+
+.ons{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.ons__detail{
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.ons__detail-checkbox{
+    border: 1px solid var(--cool-gray);
+    background-color: var(--alabaster);
+    height: max-content;
+    padding: 2px;
+    border-radius: 2.5px;
+}
+
+.ons__detail-checkbox.selected{
+    border: 1px solid var(--purplish-blue);
+    background-color: var(--purplish-blue);
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.ons__detail-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4px;
+}
+
+.ons__detail-info--title{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--marine-blue);
+}
+
+.ons__detail-info--subtitle{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--cool-gray);
+} 
+
+.ons__price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--purplish-blue);
+}

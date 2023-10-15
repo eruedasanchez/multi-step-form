@@ -1,0 +1,8 @@
+.container-ons{
+    width: 400px;
+    padding: 38px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 50px;
+}
