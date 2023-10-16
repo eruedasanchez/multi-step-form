@@ -1,23 +1,13 @@
 import './StepTwo.css';
-import { plan } from '../../resources/resources.js'; 
 import { useState } from 'react';
+import { plan } from '../../resources/resources.js'; 
 import StepTwoPlan from '../StepTwoPlan/StepTwoPlan';
+import NextStepButton from '../NextStepButton/NextStepButton';
 import iconAdvanced from './icon-advanced.svg';
 import iconArcade from './icon-arcade.svg';
 import iconPro from './icon-pro.svg';
 
-const StepTwo = () => {
-    const [selectedPlan, setSelectedPlan] = useState(null);
-    const [planMonthly, setPlanMonthly] = useState(true);
-
-    const handleToggle = () => {
-        setPlanMonthly(!planMonthly);
-    };
-    
-    const handlePlanSelect = planName => {
-        setSelectedPlan(planName);
-    };
-
+const StepTwo = ({step, selectedPlan, planMonthly, handleToggle, handlePlanSelect}) => {
     return (
         <>
             <div className="container-plans">
@@ -26,7 +16,7 @@ const StepTwo = () => {
                     planName="Arcade" 
                     planPrice={planMonthly ? "$9/mo" : "$90/yr"} 
                     selected={selectedPlan === plan.arcade}
-                    onSelect={handlePlanSelect}
+                    handlePlanSelect={handlePlanSelect}
                     planMonthly={planMonthly}
                 />
                 <StepTwoPlan 
@@ -34,7 +24,7 @@ const StepTwo = () => {
                     planName="Advanced" 
                     planPrice={planMonthly ? "$12/mo" : "$120/yr"}
                     selected={selectedPlan === plan.advanced}
-                    onSelect={handlePlanSelect}
+                    handlePlanSelect={handlePlanSelect}
                     planMonthly={planMonthly}
 
                 />
@@ -43,9 +33,8 @@ const StepTwo = () => {
                     planName="Pro" 
                     planPrice={planMonthly ? "$15/mo" : "$150/yr"}
                     selected={selectedPlan === plan.pro}
-                    onSelect={handlePlanSelect}
+                    handlePlanSelect={handlePlanSelect}
                     planMonthly={planMonthly}
-
                 />
             </div>
             <div className="container-slider">
@@ -55,6 +44,10 @@ const StepTwo = () => {
                 </div>
                 <p className={`container-slider__plan ${!planMonthly ? 'selected' : ''}`}>Yearly</p>
             </div>
+            <NextStepButton 
+                step={step}
+                selectedPlan={selectedPlan}
+            />
         </>
     )
 }

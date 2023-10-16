@@ -15,6 +15,3 @@ function App() {
 
 export default App;
 
-// const circleStyle = {
-//   left: planMonthly ? '0' : '100%',
-// };

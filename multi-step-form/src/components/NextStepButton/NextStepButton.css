@@ -1,0 +1,37 @@
+.form__buttons{
+    display: flex;
+    justify-content:space-between;
+} 
+
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.btn:is(:hover, :focus){
+    cursor: pointer;
+}
+
+.go-back{
+    background-color: transparent;
+    color: var(--cool-gray);
+}
+
+.btn.go-back.hidden{
+    visibility: hidden;
+}
+
+.next{
+    background-color: var(--marine-blue);
+    color: var(--light-blue);
+}
+
+.confirm{
+    background-color: var(--purplish-blue);
+    color: var(--alabaster);
+}
