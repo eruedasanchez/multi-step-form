@@ -1,5 +1,4 @@
 import './StepTwo.css';
-import { useState } from 'react';
 import { plan } from '../../resources/resources.js'; 
 import StepTwoPlan from '../StepTwoPlan/StepTwoPlan';
 import NextStepButton from '../NextStepButton/NextStepButton';

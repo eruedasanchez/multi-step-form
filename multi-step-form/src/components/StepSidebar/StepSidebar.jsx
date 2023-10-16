@@ -11,7 +11,7 @@ const StepSidebar = ({stepActive, number, title}) => {
                 <p className="step__text-header">step {number}</p>
                 <p className="step__text-title">{title}</p>
             </div>
-    </div>
+        </div>
     )
 }
 

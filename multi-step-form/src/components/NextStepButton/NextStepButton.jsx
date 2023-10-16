@@ -56,6 +56,17 @@ const NextStopButton = ({step, allowNextStep, fieldsStatus, selectedPlanName, se
                     }
                 </>
             }
+            {
+                parseInt(step) === number.four && 
+                <>
+                    <Link to={`/multi-step-form/${parseInt(step) - 1}`}>
+                        <button className="btn go-back">Go Back</button>
+                    </Link>
+                    <Link to={`/multi-step-form/${parseInt(step) + 1}`}>
+                        <button className="btn confirm">Confirm</button>
+                    </Link>
+                </>
+            }
         </div>
     )
 }
