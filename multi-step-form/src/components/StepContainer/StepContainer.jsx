@@ -8,23 +8,37 @@ import StepThree from '../StepThree/StepThree';
 import StepFour from '../StepFour/StepFour';
 
 const StepContainer = ({step}) => {
-    const [selectedPlan, setSelectedPlan] = useState(null);
+    const [selectedPlanName, setSelectedPlanName] = useState(null);
+    const [selectedPlanPrice, setSelectedPlanPrice] = useState(null);
     const [planMonthly, setPlanMonthly] = useState(true);
 
     const handleToggle = () => {
         setPlanMonthly(!planMonthly);
     };
     
-    const handlePlanSelect = planName => {
-        setSelectedPlan(planName);
+    const handlePlanSelect = (planName, planPrice) => {
+        setSelectedPlanName(planName);
+        setSelectedPlanPrice(planPrice);
     };
-
     
-    const [selectedOns, setSelectedOns] = useState(null);
+    const [selectedOns, setSelectedOns] = useState([]);
 
-    const handleCheckboxSelect = title => {
-        setSelectedOns(title);
-    }
+    const handleCheckboxSelect = (title, price) => {
+        setSelectedOns(prevSelectedOns => {
+            const isSelected = prevSelectedOns.some(ons => ons.title === title);
+    
+            if (isSelected) {
+                // Se elimina el elemento del estado
+                const updatedOns = prevSelectedOns.filter(ons => ons.title !== title);
+                return updatedOns;
+            } else {
+                // Se Agrega el elemento al estado
+                const newSelectedOns = [...prevSelectedOns, { title, price }];
+                console.log("Updated Ons (After Selection):", newSelectedOns);
+                return newSelectedOns;
+            }
+        });
+    };
     
     return (
         <div className="container-form">
@@ -37,7 +51,8 @@ const StepContainer = ({step}) => {
                 parseInt(step) === number.two && 
                 <StepTwo 
                     step={step}
-                    selectedPlan={selectedPlan}
+                    selectedPlanName={selectedPlanName}
+                    selectedPlanPrice={selectedPlanPrice}
                     planMonthly={planMonthly}
                     handleToggle={handleToggle}
                     handlePlanSelect={handlePlanSelect}
@@ -47,15 +62,18 @@ const StepContainer = ({step}) => {
                 parseInt(step) === number.three && 
                 <StepThree
                     step={step}
-                    selectedOns={selectedOns} 
                     handleCheckboxSelect={handleCheckboxSelect}
+                    selectedOns={selectedOns}
                 />
             }
             { 
                 parseInt(step) === number.four && 
                 <StepFour
                     step={step}
-                    selectedPlan={selectedPlan}
+                    selectedPlanName={selectedPlanName}
+                    selectedPlanPrice={selectedPlanPrice}
+                    planMonthly={planMonthly}
+                    selectedOns={selectedOns}
                 />
             }
         </div>

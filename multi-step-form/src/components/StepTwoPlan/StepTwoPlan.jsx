@@ -3,7 +3,7 @@ import './StepTwoPlan.css';
 const StepTwoPlan = ({icon, planName, planPrice, selected, handlePlanSelect, planMonthly}) => {
     
     const handleSelectedPlan = () => {
-        handlePlanSelect(planName); 
+        handlePlanSelect(planName, planPrice); 
         // Ejecuta la funcion handlePlanSelect(planName), es decir, 
         // se actualiza el valor de selectedPlan y comparamos cual 
         // se esta seleccionando, y se almacena el valor booleano en

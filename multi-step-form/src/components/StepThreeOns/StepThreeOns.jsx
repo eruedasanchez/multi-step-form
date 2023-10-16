@@ -1,8 +1,9 @@
 import './StepThreeOns.css';
 
-const StepThreeOns = ({icon, title, subtitle, price, selected, onSelect}) => {
+const StepThreeOns = ({icon, title, subtitle, price, selected, handleCheckboxSelect}) => {
+    
     const handleSelectedCheckbox = () => {
-        onSelect(title);
+        handleCheckboxSelect(title, price);
     }
     
     return (

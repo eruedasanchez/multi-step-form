@@ -31,7 +31,7 @@ export const plan = {
                         pro: "Pro"
                     };
 
-export const ons = { 
+export const onsArr = { 
                         onlineService: "Online Service",
                         largerStorage: "Larger storage",
                         customizableProfile: "Customizable profile"

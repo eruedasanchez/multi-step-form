@@ -7,7 +7,7 @@ import iconAdvanced from './icon-advanced.svg';
 import iconArcade from './icon-arcade.svg';
 import iconPro from './icon-pro.svg';
 
-const StepTwo = ({step, selectedPlan, planMonthly, handleToggle, handlePlanSelect}) => {
+const StepTwo = ({step, selectedPlanName, planMonthly, handleToggle, handlePlanSelect}) => {
     return (
         <>
             <div className="container-plans">
@@ -15,7 +15,7 @@ const StepTwo = ({step, selectedPlan, planMonthly, handleToggle, handlePlanSelec
                     icon={iconArcade} 
                     planName="Arcade" 
                     planPrice={planMonthly ? "$9/mo" : "$90/yr"} 
-                    selected={selectedPlan === plan.arcade}
+                    selected={selectedPlanName === plan.arcade}
                     handlePlanSelect={handlePlanSelect}
                     planMonthly={planMonthly}
                 />
@@ -23,7 +23,7 @@ const StepTwo = ({step, selectedPlan, planMonthly, handleToggle, handlePlanSelec
                     icon={iconAdvanced} 
                     planName="Advanced" 
                     planPrice={planMonthly ? "$12/mo" : "$120/yr"}
-                    selected={selectedPlan === plan.advanced}
+                    selected={selectedPlanName === plan.advanced}
                     handlePlanSelect={handlePlanSelect}
                     planMonthly={planMonthly}
 
@@ -32,7 +32,7 @@ const StepTwo = ({step, selectedPlan, planMonthly, handleToggle, handlePlanSelec
                     icon={iconPro} 
                     planName="Pro" 
                     planPrice={planMonthly ? "$15/mo" : "$150/yr"}
-                    selected={selectedPlan === plan.pro}
+                    selected={selectedPlanName === plan.pro}
                     handlePlanSelect={handlePlanSelect}
                     planMonthly={planMonthly}
                 />
@@ -46,7 +46,7 @@ const StepTwo = ({step, selectedPlan, planMonthly, handleToggle, handlePlanSelec
             </div>
             <NextStepButton 
                 step={step}
-                selectedPlan={selectedPlan}
+                selectedPlanName={selectedPlanName}
             />
         </>
     )
