@@ -4,14 +4,13 @@
   ![GitHub stars](https://img.shields.io/github/stars/eruedasanchez/multi-step-form?style=social)
   ![GitHub forks](https://img.shields.io/github/forks/eruedasanchez/multi-step-form?style=social)
   [![Twitter Follow](https://img.shields.io/twitter/follow/RSanchez_Eze?style=social)](https://twitter.com/intent/follow?screen_name=RSanchez_Eze)
-  
-
   <br />
   <br />
 
   <h2 align="center">Multi Step Form</h2>
 
-  Casmart is a full responsive high moda e-commerce website. <br/>Responsive for all devices. Build using React Js.
+  Build a Multi Step Form which users should be able to complete each step of the sequence,
+  go back to a previous step to update their selections, see a summary of their selections on the final step and confirm their order.<br/>Responsive for all devices. Build using React Js.
 
   <a href="https://casmart-moda-ecommerce.vercel.app/" target="_blank"><strong>➥ Live Demo</strong></a>
 
