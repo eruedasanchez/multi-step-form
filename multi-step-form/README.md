@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+<div align="center">
+  
+  ![GitHub repo size](https://img.shields.io/github/repo-size/eruedasanchez/multi-step-form)
+  ![GitHub stars](https://img.shields.io/github/stars/eruedasanchez/multi-step-form?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/eruedasanchez/multi-step-form?style=social)
+  [![Twitter Follow](https://img.shields.io/twitter/follow/RSanchez_Eze?style=social)](https://twitter.com/intent/follow?screen_name=RSanchez_Eze)
+  <br />
+  <br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h2 align="center">Multi Step Form</h2>
 
-## Available Scripts
+  Build a Multi Step Form which users should be able to complete each step of the sequence,
+  go back to a previous step to update their selections, see a summary of their selections on the final step and confirm their order.<br/>Responsive for all devices. Build using React Js.
 
-In the project directory, you can run:
+  <a href="https://casmart-moda-ecommerce.vercel.app/" target="_blank"><strong>➥ Live Demo</strong></a>
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Demo Screenshots
 
-### `npm test`
+![Multi Step Form Demo](https://i.postimg.cc/kgZr1Ppx/active-states-step-1.jpg "Multi Step Form Demo")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies
 
-### `npm run build`
+* [React Js](): Version 18.2.0
+* [HTML](): Version 5 
+* [CSS](): Version 3
+* [Node Js](): Version 18.16.1
+* [GIT](): Version 2.40
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Before you begin, ensure you have met the following requirements:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+* [Node Js](https://nodejs.org/es/download "Download Node Js") must be installed on your operating system.
 
-### `npm run eject`
+### Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Multi Step Form** contains the following components:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [MultiStepFormContainer](): Contains Sidebar and
+StepContainer component and render Error component in case an invalid "step" parameter is passed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* [Sidebar](): Renders the sidebar and contains the StepSidebar component.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [StepSidebar](): Contains the number, the title and what step is currently being rendered.
 
-## Learn More
+* [StepContainer](): Contains the logic of each of the components corresponding to each step (StepOne, StepTwo, StepThree, StepFour). In addition, it contains the StepHeader component for each step and finally the Acknowledgment component for the last step.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [StepHeader](): Contains the header of each step, that is, the title and subtitle corresponding to each step.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [StepOne](): Contains a form to complete with the user's name, email and phone number. All fields in the form are required and you will not be able to advance to the next step if they are not all complete.
 
-### Code Splitting
+* [StepTwo](): Contains each of the proposed plans for the user's choice and a slider to determine if the plan is monthly or annual. Also, you will not be able to advance to the next step if you do not choose a plan.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [StepTwoPlan](): Contains the details of each plan, that is, name, icon, price depending on whether it is monthly or annual and an alert to know which one the user is choosing.
 
-### Analyzing the Bundle Size
+* [StepThree](): Contains the add-ons that the user can add to the plan they have chosen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* [StepThreeOns](): Contains the details of each add-on, that is, the name, the description, the price depending on whether the plan is annual or monthly and an alert to know which add-on is being added to the plan.
 
-### Making a Progressive Web App
+* [StepFour](): Contains the details of the plan and add-ons (name and price of each of them) chosen by the user. Also contains a change button in case you want to change plans before confirming.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* [Acknowledgment](): Contains a message of thanks after confirming the choice of the plan with its accessories.
 
-### Advanced Configuration
+* [NextStopButton](): Contains the logic of the buttons according to the step the user is currently.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* [Error](): Contains an error message for cases in which you want to access a route that is not defined or an invalid step number is passed.
 
-### Deployment
+### Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you want to contact with me you can reach me at [LinkedIn](https://www.linkedin.com/in/e-ruedasanchez/).
 
-### `npm run build` fails to minify
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is **free to use** and does not contains any license.
