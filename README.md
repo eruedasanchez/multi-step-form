@@ -12,7 +12,7 @@
   Build a Multi Step Form which users should be able to complete each step of the sequence,
   go back to a previous step to update their selections, see a summary of their selections on the final step and confirm their order.<br/>Responsive for all devices. Build using React Js.
 
-  <a href="https://casmart-moda-ecommerce.vercel.app/](https://multi-steps-form-six-gamma.vercel.app/multi-step-form/1" target="_blank"><strong>➥ Live Demo</strong></a>
+  <a href="https://multi-steps-form-six-gamma.vercel.app/multi-step-form/1" target="_blank"><strong>➥ Live Demo</strong></a>
 
 </div>
 
