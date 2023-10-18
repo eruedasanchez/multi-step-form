@@ -56,3 +56,12 @@
 .container-slider__plan.selected{
     color: var(--marine-blue);
 }
+
+@media(max-width:375px){
+    .container-plans{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-top: 20px;
+    }
+}
