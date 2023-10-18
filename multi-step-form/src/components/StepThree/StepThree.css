@@ -6,3 +6,11 @@
     row-gap: 16px;
     margin-bottom: 50px;
 }
+
+
+
+@media(max-width:375px){
+    .container-ons{
+        width: 100%;
+    }
+}

@@ -72,3 +72,10 @@
     font-weight: 500;
     color: var(--purplish-blue);
 }
+
+@media(max-width:375px){
+    .ons__detail-info--subtitle{
+        font-size: 12px;
+        text-align: start;
+    } 
+}
