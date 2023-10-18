@@ -9,3 +9,23 @@
 .steps{
     margin: 27px;
 }
+
+@media(max-width:375px){
+    .container-steps{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url('../assets/img/bg-sidebar-mobile.svg');
+        background-size: 100% 120%;
+    }
+    
+    .steps{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 18px;
+    }
+}
+
+
+

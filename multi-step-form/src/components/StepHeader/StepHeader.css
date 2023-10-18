@@ -13,4 +13,22 @@
     font-size: 12px;
     font-weight: 400;
     color: var(--cool-gray);
-} 
+}
+
+@media(max-width:375px){
+    .form__text{
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+    
+    .form__text-title{
+        color: var(--marine-blue);
+    }
+    
+    .form__text-subtitle{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--cool-gray);
+    }
+}

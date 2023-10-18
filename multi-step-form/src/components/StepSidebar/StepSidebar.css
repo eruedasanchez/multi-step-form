@@ -37,3 +37,15 @@
     font-weight: 700;
     letter-spacing: 0.5px;
 }
+
+@media(max-width:375px){
+    .step__number{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .step__text{
+        display: none;
+    }
+}
