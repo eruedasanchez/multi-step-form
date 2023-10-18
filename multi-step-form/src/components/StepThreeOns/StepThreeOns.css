@@ -73,7 +73,7 @@
     color: var(--purplish-blue);
 }
 
-@media(max-width:375px){
+@media(max-width:800px){
     .ons__detail-info--subtitle{
         font-size: 12px;
         text-align: start;

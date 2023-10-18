@@ -2,7 +2,7 @@
     width: 34%; 
     height: 580px;
     background-image: url('./bg-sidebar-desktop.svg');
-    background-size: 100% 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
@@ -10,13 +10,13 @@
     margin: 27px;
 }
 
-@media(max-width:375px){
+@media(max-width:800px){
     .container-steps{
         position: relative;
         width: 100%;
         height: 100%;
         background-image: url('./bg-sidebar-mobile.svg');
-        background-size: 100% 120%;
+        background-size: 100% auto;
     }
     
     .steps{
@@ -26,6 +26,4 @@
         column-gap: 18px;
     }
 }
-
-
 

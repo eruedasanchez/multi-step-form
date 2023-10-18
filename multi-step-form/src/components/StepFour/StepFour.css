@@ -84,3 +84,9 @@
     font-weight: 700;
     color: var(--purplish-blue);
 }
+
+@media(max-width:800px){
+    .container-checkbox{
+        width: 100%;
+    }
+}

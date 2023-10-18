@@ -57,7 +57,7 @@
     color: var(--marine-blue);
 }
 
-@media(max-width:375px){
+@media(max-width:800px){
     .container-plans{
         display: flex;
         flex-direction: column;

@@ -2,13 +2,14 @@
     padding-top: 36px;
 }
 
-@media(max-width:375px){
+@media(max-width:800px){
     .container-form{
+        width: 80%;
         position: absolute;
         top: 12.4%;
         background-color: var(--alabaster);
         border-radius: 10px;
-        padding: 16px 20px;
-        margin: 0 5%;
+        padding: 36px 20px;
+        margin: 0 9%;
     }
 }

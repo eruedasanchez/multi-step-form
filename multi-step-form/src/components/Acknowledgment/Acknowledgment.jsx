@@ -4,7 +4,7 @@ import checkmarkIcon from './icon-thank-you.svg';
 
 const Acknowledgment = () => {
     return (
-        <div className="container-form">
+        <div className="container-form__acknowledgment">
             <div className="container-acknowledgment">
                 <img className="container-acknowledgment__image" src={checkmarkIcon} alt="icon checkmark"/>
                 <h1 className="container-acknowledgment__title">Thank you!</h1>

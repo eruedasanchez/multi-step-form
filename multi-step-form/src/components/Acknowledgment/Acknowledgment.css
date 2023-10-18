@@ -1,5 +1,5 @@
-.container-form{
-    padding-top: 120px;
+.container-form__acknowledgment{
+    padding-top: 100px;
 }
 
 .container-acknowledgment{
@@ -24,4 +24,14 @@
     font-size: 14.9px;
     text-align: center;
     color: var(--cool-gray);
+}
+
+@media(max-width:800px){
+    .container-form__acknowledgment{
+        padding-top: 50px;
+    }
+
+    .container-acknowledgment{
+        width: 100%;
+    } 
 }

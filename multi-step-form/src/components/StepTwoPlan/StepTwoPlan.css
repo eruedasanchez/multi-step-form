@@ -50,7 +50,7 @@
     color: var(--marine-blue);
 }
 
-@media(max-width:375px){
+@media(max-width:800px){
     .plan{
         width: 100%;
         height: max-content;
